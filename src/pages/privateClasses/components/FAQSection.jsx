@@ -4,8 +4,8 @@ export const FAQSection = () => {
     return (
         <div className="max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8 py-10">
             <div className="text-center">
-                <h3 className="text-3xl sm:text-5xl leading-normal font-extrabold tracking-tight text-gray-900">
-                    Preguntas Frecuentes
+                <h3 className="text-3xl sm:text-4xl leading-normal font-bold tracking-tight text-gray-900">
+                    Preguntas frecuentes
                 </h3>
                 <p className="mt-4 text-base leading-6 text-gray-700">
                     Aquí respondemos a las dudas más comunes sobre nuestras clases privadas presenciales.

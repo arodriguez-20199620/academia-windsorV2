@@ -4,7 +4,7 @@ import { FaGlobe, FaChartLine, FaUserGraduate, FaCogs } from 'react-icons/fa';
 export const BenefitsSection = () => {
   return (
     <section className="p-12 ">
-      <h2 className="text-4xl font-bold mb-10 text-center text-gray-800">¿Por Qué Elegir Nuestros Cursos?</h2>
+      <h2 className="text-4xl font-bold mb-10 text-center text-gray-800">¿Por qué elegir nuestros cursos?</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <Panel header="Mejora de la Comunicación Internacional" className="shadow-xl hover:shadow-2xl transition-shadow duration-300">
           <div className="flex items-center justify-center mb-4">

@@ -6,8 +6,8 @@ export const BenefitsSection = () => {
         <section className="relative overflow-hidden py-10">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="mx-auto text-center">
-                    <h2 className="text-3xl sm:text-5xl leading-normal font-extrabold tracking-tight text-gray-900">
-                        Ventajas de Elegir Clases Privadas Presenciales
+                    <h2 className="text-3xl sm:text-4xl leading-normal font-bold tracking-tight text-gray-900">
+                        Ventajas de elegir clases privadas presenciales
                     </h2>
                     <p className="mt-4 text-base text-gray-700">
                         Las clases privadas presenciales ofrecen una serie de beneficios que mejoran tu experiencia de aprendizaje:

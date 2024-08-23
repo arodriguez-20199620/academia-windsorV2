@@ -4,7 +4,7 @@ import { FaSearch, FaChalkboardTeacher, FaPlay, FaCheckCircle } from 'react-icon
 export const ProcessSection = () => {
   return (
     <section className="my-8 p-12">
-      <h2 className="text-4xl font-bold mb-10 text-center text-gray-800">Cómo Funciona Nuestro Proceso</h2>
+      <h2 className="text-4xl font-bold mb-10 text-center text-gray-800">Cómo funciona nuestro proceso</h2>
       <Accordion className="shadow-xl hover:shadow-2xl transition-shadow duration-300">
         <AccordionTab header="Consulta Inicial">
           <div className="flex items-center space-x-4">

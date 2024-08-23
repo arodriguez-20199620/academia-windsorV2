@@ -2,8 +2,8 @@ export const ServicesSection = () => {
   return (
     <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
-          Servicios de Inglés Corporativo
+        <h2 className="mb-4 text-4xl tracking-tight font-bold text-gray-900">
+          Servicios de inglés corporativo
         </h2>
         <p className="mb-5 font-light text-gray-500 sm:text-xl">
           Ofrecemos una variedad de servicios para satisfacer las necesidades de tu empresa.

@@ -3,7 +3,7 @@ import { Card } from 'primereact/card';
 export const FAQSection = () => {
   return (
     <section className="my-8 p-12 ">
-      <h2 className="text-4xl font-bold mb-10 text-center text-gray-800">Preguntas Frecuentes</h2>
+      <h2 className="text-4xl font-bold mb-10 text-center text-gray-800">Preguntas frecuentes</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <Card title="¿Qué niveles de inglés cubren sus cursos?" className="shadow-xl hover:shadow-2xl transition-shadow duration-300">
           <p className="text-gray-700">

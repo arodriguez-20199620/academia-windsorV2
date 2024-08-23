@@ -3,8 +3,8 @@ export const ProcessSection = () => {
         <div className="max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between">
             <div className="text-center">
                 
-                <h3 className="text-3xl sm:text-5xl leading-normal font-extrabold tracking-tight text-gray-900">
-                    Nuestro Proceso para <span className="text-steel-blue">Clases Privadas</span>
+                <h3 className="text-3xl sm:text-4xl leading-normal font-bold tracking-tight text-gray-900">
+                    Nuestro proceso para <span className="text-steel-blue">clases privadas</span>
                 </h3>
                 <p className="mt-4 text-base leading-6 text-gray-700">
                     Sigue estos pasos para comenzar tu viaje de aprendizaje con nosotros:

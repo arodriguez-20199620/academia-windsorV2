@@ -2,8 +2,8 @@ export const ServicesSection = () => {
     return (
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-10 lg:px-6">
             <div className="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
-                <h1 className="text-3xl sm:text-5xl leading-normal font-extrabold tracking-tight text-gray-900">
-                    ¿Qué Ofrecemos en Nuestras Clases Privadas Presenciales?
+                <h1 className="text-3xl sm:text-4xl leading-normal font-bold tracking-tight text-gray-900">
+                    ¿Qué ofrecemos en nuestras clases privadas presenciales?
                 </h1>
                 <p className="mb-5 font-light text-gray-500 sm:text-xl">
                     Nuestras clases privadas están diseñadas para proporcionar una experiencia de aprendizaje intensa y personalizada. Aquí está lo que ofrecemos:

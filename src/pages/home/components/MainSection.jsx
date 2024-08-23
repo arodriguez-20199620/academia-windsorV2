@@ -16,7 +16,7 @@ export const MainSection = () => {
                             Academia Windsor
                         </h1>
                         <p className="mt-6 text-md leading-8 text-white">
-                            ¡Bienvenidos a nuestra academia de idiomas! Somos un centro dedicado a proporcionar una experiencia educativa de alta calidad en inglés, francés y alemán. Nuestro compromiso es ayudarte a alcanzar tus metas lingüísticas de manera efectiva y divertida.
+                            ¡Bienvenidos a nuestra academia de idiomas! Somos un centro dedicado a proporcionar una experiencia educativa de alta calidad en inglés, español, francés, alemán, italiano y Portugués. Nuestro compromiso es ayudarte a alcanzar tus metas lingüísticas de manera efectiva y divertida.
                         </p>
                         <ChipSection />
                     </div>

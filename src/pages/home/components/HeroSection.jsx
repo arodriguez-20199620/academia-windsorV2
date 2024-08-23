@@ -1,4 +1,5 @@
 import { nosotros1 } from "../../../assets/img";
+import { Link } from "react-router-dom";
 
 export const HeroSection = () => {
     return (
@@ -24,9 +25,9 @@ export const HeroSection = () => {
                     </p>
                     <p className="text-lg mb-4 text-center md:text-left">¡Te esperamos en nuestra academia!</p>
                     <div className="flex justify-center md:justify-start">
-                        <button className="bg-dark-blue text-white px-7 py-3 rounded hover:bg-opacity-90 transition-colors duration-200">
+                        <Link to='/contacto' className="bg-dark-blue text-white px-7 py-3 rounded hover:bg-opacity-90 transition-colors duration-200">
                             Contáctanos
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>
