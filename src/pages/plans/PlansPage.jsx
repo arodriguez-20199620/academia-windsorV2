@@ -1,4 +1,4 @@
-import { CorporateClassesSection, PrivateClassesSection } from "./components";
+import { CorporateClassesSection, PrivateClassesSection, GroupClassesSection } from "./components";
 import useDocumentTitle from "../../hooks/useDocumentTitle";
 
 const PlansPage = () => {
@@ -8,6 +8,7 @@ const PlansPage = () => {
       <>
         <CorporateClassesSection />
         <PrivateClassesSection />
+        <GroupClassesSection />
       </>
     </div>
   );

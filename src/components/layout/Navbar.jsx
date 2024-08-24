@@ -47,7 +47,7 @@ export const Navbar = () => {
                 "flex align-items-center p-menuitem-link cursor-pointer transition duration-300",
                 {
                     "text-gray-800 hover:text-light-sky-blue": !isScrolled,
-                    "text-white hover:text-black": isScrolled
+                    "text-white hover:text-black": isScrolled,
                 }
             )}
             onClick={() => setSidebarVisible(false)}
@@ -78,7 +78,21 @@ export const Navbar = () => {
         }
     ];
 
-    const start = <img alt="logo" src={logo} className="mr-4 h-20 lg:h-32 py-1.5" />;
+    const start = (
+        <div className="flex items-center">
+            <img alt="logo" src={logo} className="mr-4 h-20 lg:h-32 py-1.5" />
+            <span className={clsx(
+                "text-xl lg:text-2xl font-bold transition-colors duration-300 ",
+                {
+                    "text-dark-blue": !isScrolled,
+                    "text-white": isScrolled
+                }
+            )}>
+                Academia Windsor
+            </span>
+        </div>
+    );
+
 
     const end = (
         <div className="hidden md:flex space-x-8">

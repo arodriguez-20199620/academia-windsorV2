@@ -1,14 +1,17 @@
 import { nosotros2 } from '../../../assets/img';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { SkeletonComponent } from '../../../components/layout';
 
 export const LanguagePromoSection = () => {
     return (
         <section className="flex items-center justify-center py-20 bg-light-sky-blue">
             <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-7xl mx-auto">
                 <div className="hidden md:block">
-                    <img
+                    <LazyLoadImage
                         src={nosotros2}
                         alt="Flying Bird"
                         className="w-full h-full object-cover"
+                        placeholder={<SkeletonComponent />}
                     />
                 </div>
                 <div className="bg-black text-white p-20 flex flex-col justify-center min-h-[600px] md:min-h-[600px]">

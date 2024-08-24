@@ -8,6 +8,7 @@ import portugues from './Portugués.png';
 import reinoUnido from './reinoUnido.png';
 import corporate from './corporate.jpg'
 import tutoring from './tutoring.jpg'
+import group from './group.jpg'
 import persona1 from './persona1.jpg'
 import persona2 from './persona2.jpg'
 import persona3 from './persona3.jpg'
@@ -25,6 +26,7 @@ export {
     reinoUnido,
     corporate,
     tutoring,
+    group,
     persona1,
     persona2,
     persona3

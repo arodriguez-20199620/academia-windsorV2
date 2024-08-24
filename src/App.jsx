@@ -3,6 +3,7 @@ import { useRoutes } from 'react-router-dom';
 import { Navbar, Footer } from './components/layout';
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import { logo } from './assets/img';
+import { Loading } from './pages/utils/Loading';
 import routes from './routes'
 import "./App.css"
 
@@ -17,7 +18,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Suspense fallback={null}>
+      <Suspense fallback={<Loading />}>
         <Routes />
       </Suspense>
       <FloatingWhatsApp

@@ -1,8 +1,10 @@
 import { persona1, persona2, persona3 } from '../../assets/img';
 import useDocumentTitle from '../../hooks/useDocumentTitle';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { SkeletonComponent } from '../../components/layout';
 
 const TutoresPage = () => {
-    useDocumentTitle('Academia Windsor | Tutores')
+    useDocumentTitle('Academia Windsor | Tutores');
     return (
         <div className="py-16 px-6 mx-auto max-w-screen-xl min-h-[calc(100vh-96px)] lg:min-h-[calc(100vh-144px)]">
             <div className="mx-auto max-w-screen-md text-center mb-12">
@@ -14,11 +16,11 @@ const TutoresPage = () => {
                     Cada uno de ellos tiene años de experiencia y está comprometido con tu éxito.
                 </p>
             </div>
-
             <div className="grid gap-8 lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2">
                 {/* Card 1 */}
-                <div className="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                    <img
+                <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <LazyLoadImage
+                        placeholder={<SkeletonComponent />}
                         src={persona1}
                         alt="Tutora 1"
                         className="w-full h-96 object-cover"
@@ -32,8 +34,9 @@ const TutoresPage = () => {
                 </div>
 
                 {/* Card 2 */}
-                <div className="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                    <img
+                <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <LazyLoadImage
+                        placeholder={<SkeletonComponent />}
                         src={persona2}
                         alt="Tutor 2"
                         className="w-full h-96 object-cover"
@@ -47,8 +50,9 @@ const TutoresPage = () => {
                 </div>
 
                 {/* Card 3 */}
-                <div className="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
-                    <img
+                <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+                    <LazyLoadImage
+                        placeholder={<SkeletonComponent />}
                         src={persona3}
                         alt="Tutora 3"
                         className="w-full h-96 object-cover"

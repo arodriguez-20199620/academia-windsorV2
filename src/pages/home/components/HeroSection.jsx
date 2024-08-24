@@ -1,12 +1,19 @@
 import { nosotros1 } from "../../../assets/img";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { SkeletonComponent } from "../../../components/layout";
 
 export const HeroSection = () => {
     return (
         <section className="container mx-auto flex flex-col md:flex-row justify-center  mb-10 p-4">
             {/* Primera Sección: Imagen */}
             <div className="w-full md:w-2/5 mb-6 md:mb-0">
-                <img src={nosotros1} alt="Misión" className="w-full h-full object-cover" />
+                <LazyLoadImage
+                    src={nosotros1}
+                    alt="Misión"
+                    className="w-full h-full object-cover"
+                    placeholder={<SkeletonComponent />}
+                />
             </div>
             {/* Segunda Sección: Texto */}
             <div className="w-full md:w-2/5 p-6 md:p-8 flex flex-col justify-center">
@@ -25,7 +32,7 @@ export const HeroSection = () => {
                     </p>
                     <p className="text-lg mb-4 text-center md:text-left">¡Te esperamos en nuestra academia!</p>
                     <div className="flex justify-center md:justify-start">
-                        <Link to='/contacto' className="bg-dark-blue text-white px-7 py-3 rounded hover:bg-opacity-90 transition-colors duration-200">
+                        <Link to='/contacto' aria-label="Contáctanos" className="bg-dark-blue text-white px-7 py-3 rounded hover:bg-opacity-90 transition-colors duration-200">
                             Contáctanos
                         </Link>
                     </div>
