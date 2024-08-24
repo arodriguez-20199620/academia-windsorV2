@@ -1,7 +1,6 @@
 import { corporate } from "../../../assets/img";
 import { Link } from "react-router-dom";
 
-
 export const CorporateClassesSection = () => {
     return (
         <section className="text-gray-600 body-font">
