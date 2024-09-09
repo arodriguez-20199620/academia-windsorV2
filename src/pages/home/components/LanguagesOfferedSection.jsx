@@ -1,5 +1,7 @@
 import { Card } from 'primereact/card';
 import { alemania, espanol, francia, italiano, portugues, reinoUnido } from '../../../assets/img';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export const LanguagesOfferedSection = () => {
     const languages = [
@@ -18,10 +20,13 @@ export const LanguagesOfferedSection = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {languages.map((language, index) => (
                         <Card key={index} title={language.name} className="shadow-lg">
-                            <img
+                            <LazyLoadImage
+                                onLoad={() => console.log('Image loaded!')}
                                 src={language.image}
                                 alt={language.name}
                                 className="h-full object-cover mb-4 rounded"
+                                effect='blur'
+                                wrapperClassName='h-full object-cover mb-4 rounded'
                             />
                             <p className="mt-2">{language.description}</p>
                         </Card>

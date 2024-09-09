@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { tutoring } from "../../../assets/img";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { SkeletonComponent } from "../../../components/layout";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export const PrivateClassesSection = () => {
     return (
@@ -10,9 +10,10 @@ export const PrivateClassesSection = () => {
                 <div className="lg:w-1/2 md:w-1/2 w-full mt-16 md:mt-0">
                     <LazyLoadImage
                         className="object-cover object-center rounded"
+                        wrapperClassName="objket-cover object-center rounded"
                         alt="hero"
                         src={tutoring}
-                        placeholder={<SkeletonComponent />}
+                        effect="blur"
                     />
                 </div>
                 <div

@@ -1,6 +1,6 @@
 import { nosotros2 } from '../../../assets/img';
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { SkeletonComponent } from '../../../components/layout';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export const LanguagePromoSection = () => {
     return (
@@ -11,7 +11,9 @@ export const LanguagePromoSection = () => {
                         src={nosotros2}
                         alt="Flying Bird"
                         className="w-full h-full object-cover"
-                        placeholder={<SkeletonComponent />}
+                        effect='blur'
+                        wrapperClassName="w-full h-full object-cover"
+                        onLoad={() => console.log('Image loaded!')}
                     />
                 </div>
                 <div className="bg-black text-white p-20 flex flex-col justify-center min-h-[600px] md:min-h-[600px]">

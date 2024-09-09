@@ -13,6 +13,7 @@ import persona1 from './persona1.jpg'
 import persona2 from './persona2.jpg'
 import persona3 from './persona3.jpg'
 import logo from './logo.png';
+import team from './team.jpg';
 
 export {
     logo,
@@ -29,5 +30,6 @@ export {
     group,
     persona1,
     persona2,
-    persona3
+    persona3,
+    team
 };

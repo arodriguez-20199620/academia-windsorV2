@@ -1,7 +1,7 @@
 import { group } from "../../../assets/img";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { SkeletonComponent } from "../../../components/layout";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export const GroupClassesSection = () => {
     return (
@@ -16,15 +16,16 @@ export const GroupClassesSection = () => {
                         Participa en nuestras clases grupales en línea y mejora tus habilidades junto a otros estudiantes. Ofrecemos una amplia gama de temas, adaptados a todos los niveles, con la flexibilidad que necesitas para aprender desde cualquier lugar.
                     </p>
                     <div className="flex justify-center">
-                        <Link to="/planes/clases-grupales" className="inline-flex text-white bg-dark-blue border-0 py-2 px-6 focus:outline-none hover:bg-opacity-90 rounded text-lg">
+                        <Link to="/planes/clases-online" className="inline-flex text-white bg-dark-blue border-0 py-2 px-6 focus:outline-none hover:bg-opacity-90 rounded text-lg">
                             Conoce Más
                         </Link>
                     </div>
                 </div>
                 <div className="lg:w-1/2 md:w-1/2 w-full">
                     <LazyLoadImage
-                        placeholder={<SkeletonComponent />}
                         className="object-cover object-center rounded"
+                        wrapperClassName="object-cover object-center rounded"
+                        effect="blur"
                         alt="hero"
                         src={group}
                     />

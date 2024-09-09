@@ -1,5 +1,7 @@
 import { corporate } from "../../../assets/img";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export const CorporateClassesSection = () => {
     return (
@@ -20,7 +22,8 @@ export const CorporateClassesSection = () => {
                     </div>
                 </div>
                 <div className="lg:w-1/2 md:w-1/2 w-full">
-                    <img
+                    <LazyLoadImage
+                        wrapperClassName="objket-cover object-center rounded"
                         className="object-cover object-center rounded"
                         alt="hero"
                         src={corporate}

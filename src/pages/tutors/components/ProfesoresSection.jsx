@@ -38,10 +38,7 @@ export const ProfesoresSection = () => {
         <section className="container mx-auto px-4">
             <div className="grid grid-cols-3 gap-6">
                 {profesoresData.map((profesor, index) => (
-                    // <div key={index} className={`p-6 rounded-lg shadow-lg ${profesor.color}`}>
-                    //     <h2 className="text-2xl font-semibold text-gray-800 mb-2">{profesor.title}</h2>
-                    //     <p className="text-gray-700">{profesor.description}</p>
-                    // </div>
+
                     <Card key={index} title={profesor.title} className='p-3 rounded-lg shadow-lg'>
                         <p className="m-0">
                             {profesor.description}

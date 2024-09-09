@@ -1,7 +1,7 @@
 import { nosotros1 } from "../../../assets/img";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { SkeletonComponent } from "../../../components/layout";
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 export const HeroSection = () => {
     return (
@@ -12,7 +12,9 @@ export const HeroSection = () => {
                     src={nosotros1}
                     alt="Misión"
                     className="w-full h-full object-cover"
-                    placeholder={<SkeletonComponent />}
+                    effect="blur"
+                    wrapperClassName="w-full h-full object-cover"
+                    onLoad={() => console.log('Image loaded!')}
                 />
             </div>
             {/* Segunda Sección: Texto */}
