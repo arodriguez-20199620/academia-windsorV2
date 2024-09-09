@@ -35,11 +35,10 @@ const profesoresData = [
 
 export const ProfesoresSection = () => {
     return (
-        <section className="container mx-auto px-4">
-            <div className="grid grid-cols-3 gap-6">
+        <section className="container mx-auto px-4 py-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 {profesoresData.map((profesor, index) => (
-
-                    <Card key={index} title={profesor.title} className='p-3 rounded-lg shadow-lg'>
+                    <Card key={index} title={profesor.title} className={`p-3 rounded-lg shadow-lg `}>
                         <p className="m-0">
                             {profesor.description}
                         </p>

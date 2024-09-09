@@ -7,9 +7,8 @@ const TutoresPage = () => {
     return (
         <>
             <HeaderSection />
-            <div className="min-h-screen bg-gray-100 p-6">
-                <ProfesoresSection />
-            </div>
+            <ProfesoresSection />
+
         </>
     );
 
